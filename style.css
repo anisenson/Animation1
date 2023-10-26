@@ -2,6 +2,9 @@ html {
     background: #ff785a;
 }
 
+html:hover .spider {
+    top: -120%;
+}
 
 
 .spider {
@@ -9,9 +12,11 @@ html {
     display: inline-block;
     top: 0;
     left: 30%;
+    
+    transition: .5s ease-in-out;
 
    /*animate*/
-    animation: swing 2s infinite;
+    animation: swing .5s infinite;
     transform-origin: top;
 }
 
@@ -25,7 +30,7 @@ html {
 .spider .body {
     width: 100px;
     height: 80px;
-    background: #000;
+    background: black;
     position: relative;
     border-radius: 50%;
 }
@@ -48,7 +53,7 @@ html {
 }
 
 .spider .body .eye:after {
-    background: #000;
+    background: purple;
     width: 7px;
     height: 7px;
     content: '';
